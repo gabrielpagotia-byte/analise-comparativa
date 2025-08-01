@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { Header } from './components/Header';
 import { TeamSelector } from './components/TeamSelector';
@@ -80,9 +79,19 @@ const App: React.FC = () => {
         {loading && <LoadingSpinner />}
         
         {error && (
-          <div className="mt-8 text-center bg-red-900/50 border border-red-700 text-red-300 p-4 rounded-lg">
-            <p><strong>Erro:</strong> {error}</p>
-          </div>
+            <div className="mt-8 text-center bg-red-900/50 border-2 border-red-700 text-red-200 p-6 rounded-2xl shadow-lg animate-fade-in">
+                <h3 className="text-2xl font-bold mb-3 text-red-300">Ocorreu um Erro</h3>
+                <p className="mb-6">{error}</p>
+                <button
+                    onClick={handleCompare}
+                    disabled={!canCompare || loading}
+                    className={`px-6 py-2 font-semibold rounded-lg transition-colors duration-200 text-white
+                    ${!canCompare || loading ? 'bg-gray-600 cursor-not-allowed' : 'bg-cyan-600 hover:bg-cyan-700'}
+                    `}
+                >
+                    {loading ? 'Analisando...' : 'Tentar Novamente'}
+                </button>
+            </div>
         )}
 
         {comparisonData ? (
