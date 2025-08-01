@@ -1,0 +1,5 @@
+
+{
+  "name": "Análise Comparativa de Times",
+  "description": "Uma aplicação web para comparar estatísticas detalhadas de times de futebol do Campeonato Brasileiro, utilizando a API Gemini para obter dados atualizados dos últimos 5 jogos."
+}

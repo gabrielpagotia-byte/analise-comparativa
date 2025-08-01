@@ -1,0 +1,22 @@
+export const TEAMS = [
+  "Atlético-MG",
+  "Bahia",
+  "Botafogo",
+  "Ceará",
+  "Corinthians",
+  "Cruzeiro",
+  "Flamengo",
+  "Fluminense",
+  "Fortaleza",
+  "Grêmio",
+  "Internacional",
+  "Juventude",
+  "Mirassol",
+  "Palmeiras",
+  "Red Bull Bragantino",
+  "Santos",
+  "São Paulo",
+  "Sport",
+  "Vasco da Gama",
+  "Vitória"
+] as const;
